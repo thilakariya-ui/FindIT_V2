@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item Management Dashboard</title>
+    <link rel="stylesheet" href="itemmanagement.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="logo">
+                <i class="fa-solid fa-cube"></i>
+                <span>FindIt</span>
+            </div>
+            <nav class="nav-menu">
+                <a href="#" class="nav-link dashboard-link">
+                    <i class="fa-solid fa-gauge-high"></i>
+                    <span>Dashboard</span>
+                </a>
+
+                <a href="#" class="nav-link active">
+                    <i class="fa-solid fa-list-check"></i>
+                    <span>Item Management</span>
+                </a>
+                <a href="#" class="nav-link bounty-link">
+                    <i class="fa-solid fa-trophy"></i>
+                    <span>Bounty Management</span>
+                </a>
+
+            </nav>
+            <div class="user-profile">
+                <div class="user-icon">
+                    <i class="fa-solid fa-user-tie"></i>
+                </div>
+                <div class="user-info">
+                    <span class="user-name">Admin</span>
+                    <span class="user-email">admin@findit.com</span>
+                </div>
+            </div>
+            <a href="#" class="nav-link logout">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <span>Logout</span>
+            </a>
+        </aside>
+
+        <main class="main-content">
+            <header class="topbar">
+                <h1 class="page-title">Item Management</h1>
+                <div class="topbar-right">
+                    <i class="fa-solid fa-bell"></i>
+                </div>
+            </header>
+
+            <div class="control-panel">
+                <div class="search-and-filters">
+                    <div class="search-box">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Search items...">
+                    </div>
+                    <div class="filter-dropdown">
+                        <span>Status: All</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="filter-dropdown">
+                        <span>Sort by Date</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-list-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ITEM NAME</th>
+                            <th>CATEGORY</th>
+                            <th>DATE REPORTED</th>
+                            <th>STATUS</th>
+                            <th>ACTIONS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Lost Black Wallet</td>
+                            <td>Personal</td>
+                            <td>2024-03-15</td>
+                            <td><span class="status lost">Lost</span></td>
+                            <td>
+                                <a href="#" class="action-btn">Edit</a>
+                                <a href="#" class="action-btn">Remove</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Silver Laptop</td>
+                            <td>Electronics</td>
+                            <td>2024-03-14</td>
+                            <td><span class="status found">Found</span></td>
+                            <td>
+                                <a href="#" class="action-btn">Edit</a>
+                                <a href="#" class="action-btn">Remove</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Red Scarf</td>
+                            <td>Apparel</td>
+                            <td>2024-03-12</td>
+                            <td><span class="status resolved">Resolved</span></td>
+                            <td>
+                                <a href="#" class="action-btn">Edit</a>
+                                <a href="#" class="action-btn">Remove</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>House Keys on a Blue Lanyard</td>
+                            <td>Personal</td>
+                            <td>2024-03-11</td>
+                            <td><span class="status lost">Lost</span></td>
+                            <td>
+                                <a href="#" class="action-btn">Edit</a>
+                                <a href="#" class="action-btn">Remove</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Brown Leather Backpack</td>
+                            <td>Bags</td>
+                            <td>2024-03-10</td>
+                            <td><span class="status found">Found</span></td>
+                            <td>
+                                <a href="#" class="action-btn">Edit</a>
+                                <a href="#" class="action-btn">Remove</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="pagination">
+                    <span>Showing 1 to 5 of 20 Items</span>
+                    <button class="page-btn">Previous</button>
+                    <button class="page-btn">Next</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="itemmanagement.js"></script>
+</body>
+
+</html>
